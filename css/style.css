@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    position: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+img {
+    margin: 10px;
+    filter: drop-shadow(16px 16px 10px rgba(115, 115, 115, 0.364));
+}
+
+img:hover {
+    filter: drop-shadow(16px 16px 10px rgba(13, 219, 255, 0.364));
+    transform: translateY(-5px);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: grey 2px solid;
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+
+select {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: grey 2px solid;
+}
+
+button {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: darkgray;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+
+button:hover {
+    background-color: #3e8e41
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

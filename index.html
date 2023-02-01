@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="textInput">Search:</label>
+        <input type="text" id="textInput" placeholder="Ex. Lego">
+        <label for="imgAmountInput">Amount:</label>
+        <input type="number" id="imgAmountInput" placeholder="(Defualt 100)">
+        <select id="imgSize">
+            <option value="m">Small</option>
+            <option value="z">Medium</option>
+            <option value="b">Large</option>
+        </select>
+        <select id="sortby">
+            <option value="date-posted-desc">Latest</option>
+            <option value="interestingness-desc">Interestingness</option>
+            <option value="relevance">Relevance</option>
+        </select>
+        <button>Search</button>
+    </form>
+    <div id="imgContainer"></div>
+</body>
+
+</html>
